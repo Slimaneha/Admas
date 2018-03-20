@@ -9,15 +9,13 @@
 
 
          <!-- Lien googles Fonte !! -->
-         <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded" rel="stylesheet">
-         <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
-         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-         <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
-         <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
-         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">   
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+         <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+         <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+       
+       
+         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
           <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/normalize.css">
@@ -40,28 +38,312 @@
 
            
               
-                    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
-                        <a class="navbar-brand nav-police" href="index.html"></a>
+                    <nav  class="navbar navbar-expand-lg  navbar-dark  bg-dark   ">
+                        <a class="navbar-brand nav-police" id="nav-titre" oneClick="leinHome()" href="#">ADAMS MAGIC SHOW  <i class="fas fa-magic"></i></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                         </button>
                       
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                          <ul class="navbar-nav mr-auto ">
+                        <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul id="nav" class="navbar-nav mr-auto ">
                             <li class="nav-item">
-                              <a class="nav-link text-center " href="#">  </a>
+                              <a class="nav-link text-center" onClick="lienPre ()"  href="#">TOMMY & LUDIVINE  </a>
                             </li>
                             <li class="nav-item"  >
-                                <a class="nav-link text-center disabled  " href="#"> </a>
+                                <a class="nav-link text-center" href="#"> THEMES </a>
                             </li>
                             <li class="nav-item"  >
-                                <a class="nav-link text-center  " href="#"> Cerdit   </a>
+                                <a class="nav-link text-center" onClick="lienAdl ()"  href="#" > ADULTES  </a>
+                                
                             </li>
+                            <li class="nav-item"  >
+                                    <a class="nav-link text-center   " onClick="lienEfan ()"href="#"> ENFANTS  </a>
+                                </li>
+                                <li class="nav-item"  >
+                                        <a class="nav-link text-center  " href="#"> DIVERS    </a>
+                                    </li>
+    
+
                              </ul>
                         </div> 
                       </nav>
-<!-- Disponibilité : <strong class="dispo"> Disponibles</strong> ! <br> -->
-         
+
+
+
+
+                      <div id="langueUn" class="langueUn" >
+                             <figure class="flex container-fluid center  ">
+                                <img class="img-fluid" src="img/magie/magie1.png" alt="Images magie libre de droit  ">
+                              
+                                
+                            </figure>
+
+                       
+                          <ul id="langue" class="flex">
+                             
+
+                               <a id="fr"    onClick="ChoixLanFr()"  href="#!"><li   ><img src="img/langue/Français.png"  alt="" class="img-fluid"></li></a>
+                               <a id="fr"    onClick="ChoixUk()"  href="#!"><li   ><img src="img/langue/english.png"  alt="" class="img-fluid"></li></a>
+                               <a id="fr"    onClick="ChoixNl()"  href="#!"><li   ><img src="img/langue/nederlands.png"  alt="" class="img-fluid"></li></a>
+                              
+                            
+                          </ul>
+                      </div>
+
+
+                        
+
+                      <!-- équipe magie -->
+                      <div id="homeUn" class="container-fluid" >
+
+                        <!-- Debut carousel  -->
+
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    </ol>
+                                    <div class="carousel-inner" role="listbox">
+                                      <div class="carousel-item active">
+                                        <img class="d-block w-100 img-fluid " src="img/pubUn.jpg" data-src="holder.js/600x300?theme=social" alt="First slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100 img-fluid" src="img/pub.jpg" data-src="holder.js/600x300?theme=industrial" alt="Second slide">
+                                      </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Next</span>
+                                    </a>
+                                  </div>
+
+                                
+
+                        <h1 class="center">Présentation de l'équipe</h1>
+
+                        <div id="bio"  class="flex">  
+
+
+                             <a  data-toggle="modal" data-target="#tommy" class="card" href="!#">
+                                     <div >
+                                      <img class="card-img-top img-fluid" src="img/tommyUn.jpg" alt="Tommy magicien">
+                                        <div class="card-body">
+                                          <h4 class="card-title">TOMMY STEVENS</h4>
+                                          <p class="card-text">
+                                                C'est dans une famille d'artistes de cirque que Tommy Stevens acquiert l'expérience du spectacle. <br> Il commença comme pianiste, ensuite jongleur...
+                                          </p>
+                                          
+                                        </div>
+                                      </div>  
+                             </a> 
+
+
+                                      <a  class="card" href="!#">
+                                          <div>
+                                            <img class="card-img-top img-fluid" src="img/ludivine.jpg" alt="Tommy magicien">
+                                            <div class="card-body">
+                                              <h4 class="card-title">LUDIVINE</h4>
+                                              <p class="card-text">
+                                            Née dans une famille de musiciens, Ludivine commença à jouer du violon très tôt ... <br>Déjà à l'âge de 14 ans, elle fit partie intégrante...
+                                              </p>
+                                             
+                                            </div>
+                                          </div>   
+                                     </a>     
+
+                        </div>
+
+                       
+                     </div>
+
+
+                     <div class="modal fade" id="tommy" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title center" id="exampleModal3Label">TOMMY STEVENS</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                        C'est dans une famille d'artistes de cirque que Tommy Stevens acquiert l'expérience du spectacle. <br> Il commença comme pianiste, ensuite jongleur, funambule, sculpteur de ballons, ventriloque, magicien, escapologiste, cracheur de feu. <br>
+                                        Dès son plus jeune âge, Tommy eut l'occasion de travailler dans les cirques suivants; Wiener circus, Van den Berghe circus, l'Andore circus et le cirque Bonjour avec Jean Baptiste Thiere et Victoria Chaplin. <br>
+                                        Plus tard, Tommy exerçait ses talents dans différentes émissions Télévisées avec Anouchka RTL, Carlos Vacquera RTBF, Walter Capiau VTM, Etienne et Eugène RTL, Luc Appermont VTM, Hans Hotten VTM, Guy Lemaire Télé BXL, Krol RTBF et crée pour la BRT tous les effets et gags magiques dans l'émission Typish Chris avec Chris Van de Durpel. <br>
+                                        Vendeur dans un magasin de magie et cirque, Tommy initie les différents arts du spectacle à ses amis et collègues magiciens.
+
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Fermer</button>
+                                 
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+
+                     <!-- Fin équipe magie -->
+
+
+
+
+                    <!-- Debut ADULTES -->
+
+
+
+                    <div id="adultes" class="container-fluid  center">
+                        <h1>Spectacle pour adulte</h1>
+
+                            <div class="card-group">
+                               <a class="card" href="#!">    <div>
+                                      <div class="card-body">
+                                        <h4 class="card-title">ARNAQUEUR</h4>  
+                                        <img class="img-luid " src="img/tommyDeux.jpg" alt="tommy"> 
+                                        <p class="card-text">Jouez contre lui et gagnez ! <br> Cette animation commerciale convient pour les foires, 
+                                            expositions, 
+                                            dîners, et soirées casino. <br>
+                                            CARTES / CHAINES 
+                                            GOBELETS ET JEUX 
+                                            D'ARNAQUES
+                                            </p> 
+
+                                      </div>
+                                    </div>  </a>  
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <h4 class="card-title">MICROMAGIE</h4>   
+                                        <img class="img-fluid" src="img/tommy3.jpg" alt="tommy">
+                                        <p class="card-text">Passez une soirée inoubliable avec un magicien spécialisé dans l'art du close-up <br> BOULES - CARTES - FOULARDS - CORDES - DES A JOUER - CIGARETTES - ETC ... </p>
+                                      </div>
+                                    </div>
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <h4 class="card-title">JONGLEUR & CRACHEUR DE FEU </h4>
+                                        <img class="img-fluid" src="img/tommy4.jpg" alt="tommy">
+                                        <p class="card-text">Un numéro extraordinaire avec :
+                                                assiettes de feu, cordes de feu, diabolo enflammé, chaînes de feu, bâton-torche, lassos, etc ... <br> <strong>POSSIBILITE DE CRACHER DU FEU EN INTERIEUR</strong></p>
+                                      </div>
+                                    </div>
+                                    <div class="card">
+                                            <div class="card-body">
+                                              <h4 class="card-title">JONGLEUR D'ASSIETTES  </h4> <br>
+                                              <img class="img-fluid" src="img/t.jpg" alt="tommy"> <br> <br>
+                                              <p class="card-text">Un numéro unique présenté plusieurs fois en Télévision</p>
+                                            </div>
+                                          </div>
+                                  </div>
+                                  <button id="contacts" type="button" data-toggle="modal" data-target="#contact" class="btn btn-outline-success">Contacts<i class="fas fa-phone"></i></button>
+                    </div>
+
+
+
+                            <div id="enfants" class="centre container-fluid  ">
+
+                                    <div class="card-deck center    ">
+                                            <div class="card">
+                                              <div class="card-body">
+                                                  
+                                                <h4 class="card-title"> ANNIVERSAIRE D'ENFANTS </h4>
+                                                <img src="img/tommy5.jpg" alt="" class="img-fluid">
+                                                <p class="card-text"><ul>
+                                                    <li> <strong>Trois spectacles différents</strong>  </li>
+                                                    <li>de 0 à 3 ans</li>
+                                                    <li>de 3 à 6 ans</li>
+                                                    <li>de 6 à 12 ans</li>
+                                                </ul> <br>
+                                                MAGIE AVEC PARTICIPATION DES ENFANTS, 
+                                                JONGLERIES AMUSANTES, VENTILOQUIE, 
+                                            SCULPTURES DE BALLONS.
+                                            </p>
+                                              </div>
+                                            </div>
+                                            <div class="card">
+                                              <div class="card-body">
+                                                <h4 class="card-title">CLOWN TOMMY</h4>
+                                                <img src="img/tommy6.jpg" alt="tommy" class="img-fluid">
+                                                <p class="card-text">Pour une ouverture de magasin, une braderie, un anniversaire, une animation publicitaire, 
+                                                        une matinée enfantine, un évènement,
+                                                        etc ...</p>
+                                              </div>
+                                            </div>
+                                            <div class="card">
+                                              <div class="card-body">
+                                                <h4 class="card-title"> FETE DE NOEL ET SET NICOLAS </h4>
+                                                <img src="img/tommy7.jpg" alt="tommy" class="img-fluid">
+                                                <p class="card-text">Un spectacle unique avec décor, musique et nombreuses participations des enfants.
+                                                        Magie, jonglerie, sculpture de papier, clochettes musicales, sculpture de ballon et grande illusion.</p>
+                                              </div>
+                                            </div>
+                                            <div class="card">
+                                                    <div class="card-body">
+                                                      <h4 class="card-title">STAND ECOLE DU CIRQUE </h4>
+                                                      <img src="img/ecole.jpg" alt="cour de magie" class="img-fluid">
+                                                      <p class="card-text">tand de maquillage comprenant : deux animateurs, stand décoratif, 
+                                                            matériel de jonglerie ( massues, cerceaux, bâton du diable, diabolos, lassos, assiettes, foulards ), 
+                                                            matériel de funambule, échasses, légos géants, mikados super géants, monocycle, 
+                                                            sculptures de ballons à volonté, maquillage pour enfants, spectacle de magie
+                                                            </p>
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="card">
+                                                        <div class="card-body">
+                                                          <h4 class="card-title">MAQUILLAGES POUR ENFANTS </h4>
+                                                          <img src="img/ludivineUn.jpg" alt="" class="img-fluid">         
+                                                          <p class="card-text">LION / PAPILLON / PRINCESSE / PAYSAGE / 
+                                                                CHAUVE-SOURIS / ARAIGNEE / 
+                                                                PIKACHU CHINOIS / 
+                                                                CLOWN / TIGRE / 
+                                                                ETC ...</p>
+                                                        </div>
+                                                      </div>
+                                          </div>
+                                          <button id="contacts" type="button" data-toggle="modal" data-target="#contact" class="btn btn-outline-success">Contacts<i class="fas fa-phone"></i></button>
+
+                            </div>
+
+                
+
+                    
+
+
+                <!-- Modial conatct surtout ne pas mettre en display none !!! -->
+
+                <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModal3Label">Contactez-nous </h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <ul class="center">
+                                  <li><i class="fas fa-mobile-alt"></i> GSM   : 0478 34 18 34</li>
+                                  <li><i class="fas fa-phone"></i> Tel  : 02 720 44 25</li>
+                                  <li><i class="fas fa-fax"></i> Fax : 02 721 65 55</li>
+                                  <li><a href="mailto:tommystevens@belgacom.net"> <i class="far fa-envelope-open"></i> Par mail </a></li>
+                                  <li><i class="fas fa-map-marker"></i> Adresses  : <span>Tommy Stevens : 16, <br> OLMENSTRAAT - 1930 Zaventem </span></li>
+                                 
+                              </ul>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Fermer</button>
+                             
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                
+                    <!-- footer -->
+                    <nav class="navbar fixed-bottom navbar-dark bg-dark">
+                            <a class="navbar-brand" href="#!"></a>
+                          </nav>
             
 
       <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
